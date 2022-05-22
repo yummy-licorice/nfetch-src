@@ -9,7 +9,7 @@ Deps: nim, nimble
 
 ```bash
 git clone https://github.com/Infinitybeond1/nfetch-src
-cd https://github.com/Infinitybeond1/nfetch
+cd https://github.com/Infinitybeond1/nfetch-src
 nimble build
 sudo mv nfetch /usr/local/bin
 ```
