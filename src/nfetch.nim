@@ -1,12 +1,10 @@
-import distro
-import arch
-import shell
-import editor
-import init
+import libs/[arch, distro, editor, init, shell]
+import config/sep
 import std/terminal
+import std/strformat
 
-stdout.styledWriteLine(fgBlue, "distro ", fgWhite, getDistro())
-stdout.styledWriteLine(fgMagenta, "arch ", fgWhite, getArch())
-stdout.styledWriteLine(fgGreen, "init ", fgWhite, getInit())
-stdout.styledWriteLine(fgRed, "shell ", fgWhite, getShell())
-stdout.styledWriteLine(fgYellow, "editor ", fgWhite, getEditor()) 
+stdout.styledWriteLine(fgBlue, fmt"distro{getSeperator()}", fgWhite, getDistro())
+stdout.styledWriteLine(fgMagenta, fmt"arch{getSeperator()}", fgWhite, getArch())
+stdout.styledWriteLine(fgGreen, fmt"init{getSeperator()}", fgWhite, getInit())
+stdout.styledWriteLine(fgRed, fmt"shell{getSeperator()}", fgWhite, getShell())
+stdout.styledWriteLine(fgYellow, fmt"editor{getSeperator()}", fgWhite, getEditor()) 
