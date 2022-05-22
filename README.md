@@ -15,5 +15,5 @@ sudo mv nfetch /usr/local/bin
 ```
 
 ## Configuration
-Check the wiki page for config instructions
+Check the [wiki page](https://github.com/Infinitybeond1/nfetch-src/wiki) for config instructions
 
