@@ -13,3 +13,7 @@ cd ./nfetch-src
 nimble build
 sudo mv nfetch /usr/local/bin
 ```
+
+## Configuration
+Check the wiki page for config instructions
+
