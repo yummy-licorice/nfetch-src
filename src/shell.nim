@@ -1,5 +1,11 @@
 import os
+import strutils
 
 proc getShell*(): string =
-    os.getEnv("SHELL")
+    let shellsplit = os.getEnv("SHELL").split("/")
+    let shell = shellsplit[2]
+    return shell
+
+
+
 
