@@ -1,4 +1,3 @@
-import strutils
 import os
 
 proc getSeperator*(): string =
