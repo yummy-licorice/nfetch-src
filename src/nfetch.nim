@@ -1,11 +1,11 @@
 import libs/[arch, distro, editor, init, shell, title]
-import config/sep
+import config/[sep, keys]
 import std/[terminal, strformat]
 
 
-stdout.styledWriteLine(fgCyan, fmt"{getUsername()}", fgWhite, fmt"@{getHostname()}")
-stdout.styledWriteLine(fgBlue, fmt"distro{getSeperator()}", fgWhite, getDistro())
-stdout.styledWriteLine(fgMagenta, fmt"arch{getSeperator()}", fgWhite, getArch())
-stdout.styledWriteLine(fgGreen, fmt"init{getSeperator()}", fgWhite, getInit())
-stdout.styledWriteLine(fgRed, fmt"shell{getSeperator()}", fgWhite, getShell())
-stdout.styledWriteLine(fgYellow, fmt"editor{getSeperator()}", fgWhite, getEditor()) 
+stdout.styledWrite(fgBlack, fmt"{getUsername()}", fgWhite, fmt"@{getHostname()}")
+stdout.styledWriteLine(fgBlue, fmt"{getDistroText()}{getSeperator()}", fgWhite, getDistro())
+stdout.styledWriteLine(fgMagenta, fmt"{getArchText()}{getSeperator()}", fgWhite, getArch())
+stdout.styledWriteLine(fgGreen, fmt"{getInitText()}{getSeperator()}", fgWhite, getInit())
+stdout.styledWriteLine(fgRed, fmt"{getShellText()}{getSeperator()}", fgWhite, getShell())
+stdout.styledWriteLine(fgYellow, fmt"{getEditorText()}{getSeperator()}", fgWhite, getEditor()) 
