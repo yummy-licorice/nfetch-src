@@ -9,4 +9,4 @@ stdout.styledWriteLine(fgMagenta, fmt"{getArchText()}{getSeperator()}", fgWhite,
 stdout.styledWriteLine(fgGreen, fmt"{getInitText()}{getSeperator()}", fgWhite, getInit())
 stdout.styledWriteLine(fgRed, fmt"{getShellText()}{getSeperator()}", fgWhite, getShell())
 stdout.styledWriteLine(fgYellow, fmt"{getEditorText()}{getSeperator()}", fgWhite, getEditor()) 
-stdout.styledWriteLine(fgBlack, fmt"{getSymbol()}", fgRed, fmt"", fgGreen, fmt"{getSymbol()}", fgYellow, fmt"{getSymbol()}", fgBlue, fmt"{getSymbol()}", fgMagenta, fmt"{getSymbol()}", fgCyan, fmt"{getSymbol()}", fgWhite, fmt"◈")
+stdout.styledWriteLine(fgBlack, fmt"{getSymbol()}", fgRed, fmt"{getSymbol()}", fgGreen, fmt"{getSymbol()}", fgYellow, fmt"{getSymbol()}", fgBlue, fmt"{getSymbol()}", fgMagenta, fmt"{getSymbol()}", fgCyan, fmt"{getSymbol()}", fgWhite, fmt"{getSymbol()}")
