@@ -18,7 +18,7 @@ sudo mv nfetch /usr/local/bin
 Check the [wiki page](https://github.com/Infinitybeond1/nfetch-src/wiki) for config instructions
 
 ## Screenshots
-My config:</br>
+[My config:](https://github.com/Infinitybeond1/nfetch-src/wiki/Config#my-config)</br>
 ![Screenshot_2022-05-22_23:50:05](https://user-images.githubusercontent.com/88919270/169748532-abab932e-2d1d-430b-807d-edc61831f54e.png)
 
 Default config:</br>
