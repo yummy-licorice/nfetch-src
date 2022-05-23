@@ -23,7 +23,12 @@ proc getDistro*(): string =
   elif detectOs(Linux):
     let os_release = open("/etc/os-release")
     let name = os_release.readLine()
-    let split_name = name.split("=")
+    var split_name = name.split("=")
+
+    if split_name.contains("\""):
+      split_name.delete(0)
+      split_name.delete(len(split_name))
+
     let temp = split_name[1].strip() ## this would return the "Arch Linux"
     let n = temp.toLower ## changes it to just archLinux I kinda like it better 
     return n
