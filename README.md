@@ -5,6 +5,8 @@ You can grab a binary on the releases page.</br> Its also available in the AUR a
 
 ## Compile
 
+Availible in the AUR as nfetch-git</br>
+
 Deps: nim, nimble
 
 ```bash
