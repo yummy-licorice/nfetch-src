@@ -34,6 +34,7 @@ proc getDistro*(): string =
     return n
   elif detectOs(Windows): 
     echo "Please switch to a competent operating system" ## another possible stdout for the windows plebs
+    quit 1
   else:
     let os = "otherUnix"
     return os
