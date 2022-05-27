@@ -2,8 +2,8 @@ import libs/[arch, distro, editor, init, shell, title]
 import config/parsefile
 import std/[terminal, strformat]
 
-
-stdout.styledWrite(fgCyan, fmt"{getUsername()}", fgWhite, fmt"@{getHostname()}")
+if title_enabled == "true":
+  stdout.styledWrite(fgCyan, fmt"{getUsername()}", fgWhite, fmt"@{getHostname()}")
 stdout.styledWriteLine(fgBlue, fmt"{distroText}{seperator}", fgWhite, getDistro())
 stdout.styledWriteLine(fgMagenta, fmt"{archText}{seperator}", fgWhite, getArch())
 stdout.styledWriteLine(fgGreen, fmt"{initText}{seperator}", fgWhite, getInit())
