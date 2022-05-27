@@ -29,8 +29,8 @@ proc getDistro*(): string =
     let name = os_release.readLine()
     var split_name = name.split("=")
     let temp = split_name[1].strip() ## this would return the "Arch Linux"
-    let n = temp.toLower ## changes it to just archLinux I kinda like it better 
-    return n
+    let os = temp.toLower ## changes it to just archLinux I kinda like it better 
+    return os
   elif detectOs(Windows): 
     echo "Please switch to a competent operating system" ## another possible stdout for the windows plebs
     quit 1
