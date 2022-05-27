@@ -9,8 +9,8 @@ proc getConfigFile(): string =
   else:
     return userConfigFile
 
-#let config = loadConfig(getConfigFile())
-let config = loadConfig(fmt"{getHomeDir()}Documents/Code/nfetch/config.ini")
+let config = loadConfig(getConfigFile())
+#let config = loadConfig(fmt"{getHomeDir()}Documents/Code/nfetch/config.ini")
 
  # Get all the variables from the config file and export theme
 let distroText* = config.getSectionValue("Keys", "distro")
