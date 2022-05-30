@@ -23,7 +23,7 @@ proc getDistro*(): string =
   elif detectOs(Linux):
     var os_release = open("/etc/os-release")
     var line = 0
-    while line < 2:
+    while line < 1:
       discard os_release.readLine()
       inc line
     let name = os_release.readLine()
